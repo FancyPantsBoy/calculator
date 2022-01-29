@@ -1,0 +1,121 @@
+:root {
+  --default-bg-color: #ebebeb;
+  --dark-bg-color: #243441;
+  --default-text-color: #f4f5f6;
+  --dark-text-color: #2a3945;
+  --mild-text-color: #a7a7a7;
+  --accent-text-color: #ed802e;
+  --accent-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3),
+    0px -4px 8px rgb(237, 128, 46, 0.4);
+  --dark-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgb(46, 65, 82, 0.9);
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.canvas {
+  background-color: #f5a66b;
+  border: 1px solid #000;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator.default {
+  background: var(--default-bg-color);
+}
+.calculator.dark {
+  background: var(--dark-bg-color);
+}
+
+.calculator {
+  height: 732px;
+  width: 360px;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 12px 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.keyboard {
+  height: 60%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  column-gap: 16px;
+  padding: 16px 8px;
+}
+
+.default .display-screen {
+  color: var(--dark-text-color);
+}
+.dark .display-screen {
+  color: var(--mild-text-color);
+}
+.display-screen {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.default .result {
+  color: var(--dark-text-color);
+}
+.dark .result {
+  color: var(--default-text-color);
+}
+.result {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.operation {
+  color: var(--mild-text-color);
+}
+.default .keyboard-button {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2),
+    0px -4px 10px rgb(255, 255, 255, 1);
+}
+.dark .keyboard-button {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgb(46, 65, 82, 0.9);
+}
+.keyboard-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  height: 56px;
+  border-radius: 10px;
+  color: var(--mild-text-color);
+  font-weight: 500;
+}
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.accent-text {
+  color: var(--accent-text-color);
+}
+.text-white {
+  color: var(--default-text-color);
+}
+.accent-bg {
+  background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3),
+    0px -4px 8px rgb(237, 128, 46, 0.4);
+}

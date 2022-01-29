@@ -1,54 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main2.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-
-<body>
-  <div>
-    <div><input type="text"></div>
-    <div class="keyboard" style="display: flex;">
-      <div class="keyboard-numbers">
-        <div class="keyboard-row">
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
+  <body>
+    <div class="canvas">
+      <div class="calculator default">
+        <div class="display-screen">
+          <p class="result">7428</p>
+          <p class="operation">7000+400+28</p>
         </div>
-        <div class="keyboard-row">
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-        </div>
-        <div class="keyboard-row">
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-        </div>
-        <div class="keyboard-row">
-          <button>0</button>
-          <button>.</button>
-        </div>
-
-      </div>
-      <div class="keyboard-operations">
-        <div class="keyboard-row">
-          <button>x</button>
-          <button>/</button>
-        </div>
-        <div class="keyboard-row">
-          <button>+</button>
-          <button>-</button>
-        </div>
-        <div class="keyboard-row">
-          <button>=</button>
+        <div class="keyboard">
+          <div class="keyboard-button accent-text">AC</div>
+          <div class="keyboard-button accent-text">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z"
+              ></path>
+            </svg>
+          </div>
+          <div class="keyboard-button accent-text">%</div>
+          <div class="keyboard-button accent-text">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M12 19C13.1046 19 14 18.1046 14 17C14 15.8954 13.1046 15 12 15C10.8954 15 10 15.8954 10 17C10 18.1046 10.8954 19 12 19Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+          <div class="keyboard-button">7</div>
+          <div class="keyboard-button">8</div>
+          <div class="keyboard-button">9</div>
+          <div class="keyboard-button accent-text">x</div>
+          <div class="keyboard-button">4</div>
+          <div class="keyboard-button">5</div>
+          <div class="keyboard-button">6</div>
+          <div class="keyboard-button accent-text">-</div>
+          <div class="keyboard-button">1</div>
+          <div class="keyboard-button">2</div>
+          <div class="keyboard-button">3</div>
+          <div class="keyboard-button accent-text">+</div>
+          <div class="keyboard-button">0</div>
+          <div class="keyboard-button">.</div>
+          <div class="keyboard-button col-span-2 accent-bg text-white">=</div>
         </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
